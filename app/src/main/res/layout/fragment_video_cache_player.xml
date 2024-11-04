@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".videoCachePlayer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/videeo_view"  >
+
+
+
+        <com.otaliastudios.zoom.ZoomSurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:transformation="centerInside"
+            app:alignment="center_horizontal"
+            app:transformationGravity="auto"
+            app:overScrollHorizontal="false"
+            app:overScrollVertical="false"
+            app:overPinchable="false"
+            app:horizontalPanEnabled="true"
+            app:verticalPanEnabled="true"
+            app:zoomEnabled="true"
+            app:flingEnabled="true"
+            app:scrollEnabled="true"
+            app:oneFingerScrollEnabled="true"
+            app:twoFingersScrollEnabled="true"
+            app:threeFingersScrollEnabled="true"
+            app:minZoom="1"
+            app:minZoomType="zoom"
+            app:maxZoom="8"
+            app:maxZoomType="zoom"
+
+            android:layout_gravity="bottom|center_horizontal"
+
+
+            app:animationDuration="1100"/>
+
+
+        <androidx.media3.ui.PlayerControlView
+            android:id="@+id/player_control_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:animateLayoutChanges="true"
+            app:ad_marker_width="100dp"
+            app:animation_enabled="false"
+            app:bar_height="3.5dp"
+            app:buffered_color="@color/white"
+            app:played_color="@color/red"
+            app:scrubber_color="@color/red"
+            app:show_fastforward_button="false"
+            app:show_next_button="false"
+            app:show_previous_button="false"
+            app:show_rewind_button="false"
+            app:show_vr_button="false"
+
+
+            />
+
+    </FrameLayout>
+
+
+</FrameLayout>

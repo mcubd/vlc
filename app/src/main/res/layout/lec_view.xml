@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="24dp"
+
+
+    android:orientation="horizontal">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:id="@+id/lin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageview0"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_chapter_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:padding="4dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/green2"-->
+<!--            />-->
+
+
+        <TextView
+            android:id="@+id/email"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/imageview0"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:text="Class - 1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+  </LinearLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:textColor="@color/white"
+        android:textSize="8dp"
+
+        android:visibility="visible"
+
+
+        tools:text="Name" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/email"-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_below="@id/name"-->
+
+<!--        android:textColor="@color/red"-->
+<!--        android:visibility="gone"-->
+<!--        tools:text="emial@email.com" />-->
+
+
+</RelativeLayout>

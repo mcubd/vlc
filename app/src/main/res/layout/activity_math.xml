@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/playlist_bg"
+    tools:context=".math">
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:onClick="cl"
+             android:id="@+id/sorol">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview1"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview1"
+            android:textSize="20dp"
+            android:text="Soolekha"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+
+        android:id="@+id/britto">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview2"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview2"
+            android:textSize="20dp"
+            android:text="britto"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+
+        android:id="@+id/matrix">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview3"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview3"
+            android:textSize="20dp"
+            android:text="matrix"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tri">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview4"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview4"
+            android:textSize="20dp"
+            android:text="tri"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Intigration">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview5"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview5"
+            android:textSize="20dp"
+            android:text="Intigration"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Diff">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/imageview6"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="10dp"
+
+            android:visibility="visible"
+            android:layout_centerVertical="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview6"
+            android:textSize="20dp"
+            android:text="Diff"/>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

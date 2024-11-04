@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ACS</string>
+    <string name="exo_download_notification_channel_name">Download Channel</string>
+    <string name="exo_download_notification_channel_description">Notifications for video downloads</string>
+    <string name="track_selection_title">sss</string>
+    <string name="exo_track_selection_title_video">exo_track_selection_title_video</string>
+    <string name="exo_track_selection_title_audio">exo_track_selection_title_video</string>
+    <string name="exo_track_selection_title_text">exo_track_selection_title_video</string>
+    <string name="exo_styled_progress_margin_bottom">exo_track_selection_title_video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

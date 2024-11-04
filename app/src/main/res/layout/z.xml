@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".z">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/vide"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+
+
+
+
+    <RelativeLayout
+    android:id="@+id/re"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/vide"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageview0"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+ android:src="@drawable/sorollec"
+            app:shapeAppearanceOverlay="@style/Widget.MaterialComponents.ShapeableImageView"
+            app:cornerRadius="16dp"
+            android:scaleType="centerCrop"
+            android:rotation="-10"
+            />
+
+        <TextView
+            android:id="@+id/item_chapter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:text="CHAPTER-3"
+            android:textSize="14sp"
+            android:textColor="@color/green2"
+        android:layout_marginRight="-8dp"
+        android:elevation="2dp"
+             />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="10dp"
+
+
+
+    android:id="@+id/parent"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/frame"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageview"
+
+
+
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:text="3"/>
+
+    </FrameLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_toEndOf="@id/frame"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+
+
+        tools:text="Name"/>
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lecTitle"
+                android:layout_toEndOf="@id/frame"
+                android:layout_below="@id/name"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+
+
+        tools:text="Name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_toEndOf="@id/frame"
+        android:layout_below="@id/lecTitle"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        android:visibility="visible"
+        tools:text="emial@email.com"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:text="Name"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/done"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+
+        android:layout_toEndOf="@id/frame"
+        android:layout_below="@id/name"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/pause"
+        android:layout_marginLeft="240dp"
+        android:layout_centerVertical="true"
+        />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/dlt"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/pause"
+
+
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/duration"-->
+<!--        android:layout_toRightOf="@id/imageview"-->
+
+<!--        android:textColor="@color/white"-->
+
+<!--        tools:text="1:32:27"/>-->
+
+
+
+
+
+
+</RelativeLayout>
