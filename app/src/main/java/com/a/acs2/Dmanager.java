@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.net.InetAddress;
 import java.util.Iterator;
 import java.util.List;
 
@@ -85,7 +86,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -389,6 +391,9 @@ public class Dmanager extends Fragment {
                         // String contentId="ttz";
                         // Initialize the download manager and download tracker
                         //  downloadManager = DemoUtil.getDownloadManager(this);
+                        if (isNetworkAvailable()) {
+                            
+                       
 
 
                         try {
@@ -439,6 +444,10 @@ public class Dmanager extends Fragment {
 
                         } catch (IOException e) {
                             throw new RuntimeException(e);
+                        }
+
+                    }else {
+                            Toast.makeText(getContext(), "No Internet", Toast.LENGTH_SHORT).show();
                         }
 
                     }
@@ -679,7 +688,39 @@ public class Dmanager extends Fragment {
 //        }
 
     }
+    private boolean isNetworkAvailable() {
 
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connectivityManager != null){
+
+
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+//        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+            if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) {
+                return true;
+            }
+        };
+        return false;
+    }
+
+    private boolean isInternetAvailable() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager != null) {
+            NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+            if (activeNetworkInfo != null && activeNetworkInfo.isConnected()) {
+                try {
+                    InetAddress ipAddr = InetAddress.getByName("google.com");
+                    return !ipAddr.equals("");
+                } catch (Exception e) {
+                    return false;
+                }
+            }
+        }
+        return false; // No active network or no internet
+    }
+    
     @Override
     public void onDestroy() {
         super.onDestroy();
