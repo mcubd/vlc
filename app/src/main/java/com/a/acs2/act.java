@@ -1,5 +1,5 @@
 package com.a.acs2;
-
+//git add . && git commit -am "Your commit message" && git push origin master --force
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
