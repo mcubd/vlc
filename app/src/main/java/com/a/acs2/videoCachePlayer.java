@@ -186,15 +186,15 @@ public class videoCachePlayer extends Fragment {
         });
 
         // Set the player to the PlayerControlView
-        playerControlView.setPlayer(mediaPlayer);
-        mediaPlayer.setSeekParameters(SeekParameters.CLOSEST_SYNC);
-        cacheDataSourceFactory = DemoUtil.getOnlyCacheDataSourceFactory(getContext());
-
-        ProgressiveMediaSource mediaSource = new ProgressiveMediaSource.Factory(cacheDataSourceFactory)
-                .createMediaSource(MediaItem.fromUri("https://firebasestorage.googleapis.com/v0/b/india-f7d05.appspot.com/o/chat%2Foutput.mp4?alt=media&token=caeb84ea-974a-4415-89e3-2819af819ca6"));
-
-
-        mediaPlayer.setMediaSource(mediaSource);
+//        playerControlView.setPlayer(mediaPlayer);
+//        mediaPlayer.setSeekParameters(SeekParameters.CLOSEST_SYNC);
+//        cacheDataSourceFactory = DemoUtil.getOnlyCacheDataSourceFactory(getContext());
+//
+//        ProgressiveMediaSource mediaSource = new ProgressiveMediaSource.Factory(cacheDataSourceFactory)
+//                .createMediaSource(MediaItem.fromUri("https://firebasestorage.googleapis.com/v0/b/india-f7d05.appspot.com/o/chat%2Foutput.mp4?alt=media&token=caeb84ea-974a-4415-89e3-2819af819ca6"));
+//
+//
+//        mediaPlayer.setMediaSource(mediaSource);
 
 
 
@@ -238,8 +238,8 @@ public class videoCachePlayer extends Fragment {
         });
 
         // Start playback
-        mediaPlayer.prepare();
-        mediaPlayer.play();
+//        mediaPlayer.prepare();
+//        mediaPlayer.play();
 
 
         surfaceView.setOnClickListener(new View.OnClickListener() {

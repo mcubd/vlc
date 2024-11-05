@@ -50,7 +50,7 @@ import android.widget.Toast;
 
 import androidx.media3.common.MediaItem;
 
-import com.airbnb.lottie.LottieAnimationView;
+
 import com.otaliastudios.zoom.ZoomSurfaceView;
 
 import org.jetbrains.annotations.NotNull;
@@ -64,7 +64,7 @@ public class offline_vid extends AppCompatActivity {
     private ZoomSurfaceView surfaceView;
     private PlayerControlView playerControlView;
     private ProgressBar progressBar;
-    private LottieAnimationView loading;
+
     private SimpleCache cache;
 
     private SimpleCache simpleCache;
@@ -85,7 +85,6 @@ public class offline_vid extends AppCompatActivity {
 
 
 
-        loading = findViewById(R.id.loading);
 
         View touch_r = findViewById(R.id.touch_r);
 
@@ -224,9 +223,9 @@ public class offline_vid extends AppCompatActivity {
             @Override
             public void onPlaybackStateChanged(int playbackState) {
                 if (playbackState == Player.STATE_BUFFERING) {
-                    loading.setVisibility(View.GONE);
+
                 } else {
-                    loading.setVisibility(View.GONE);
+
                 }
             }
 
@@ -241,10 +240,10 @@ public class offline_vid extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (playerControlView.isShown()) {
-                    loading.setVisibility(View.GONE);
+
                     playerControlView.hide();
                 } else {
-                    loading.setVisibility(View.GONE);
+
                     playerControlView.show();
                 }
             }

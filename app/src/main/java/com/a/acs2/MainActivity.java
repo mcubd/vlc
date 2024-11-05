@@ -30,7 +30,7 @@ import androidx.media3.exoplayer.LoadControl;
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory;
 import androidx.media3.exoplayer.source.ProgressiveMediaSource;
 import androidx.media3.ui.PlayerControlView;
-import com.airbnb.lottie.LottieAnimationView;
+
 import com.otaliastudios.zoom.ZoomSurfaceView;
 
 import org.jetbrains.annotations.NotNull;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private ExoPlayer mediaPlayer;
     private ZoomSurfaceView surfaceView;
     private PlayerControlView playerControlView;
-    private LottieAnimationView loading;
+
     private boolean isLandscape = true;
 
     @Override

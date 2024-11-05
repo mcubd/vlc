@@ -66,15 +66,7 @@
             android:layout_height="wrap_content"
             android:indeterminate="false"
             android:layout_centerInParent="true"/>-->
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/loading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:lottie_rawRes="@raw/m0"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        android:visibility="gone"
-        android:layout_centerInParent="true"/>
+
 
     <View
         android:id="@+id/touch_r"

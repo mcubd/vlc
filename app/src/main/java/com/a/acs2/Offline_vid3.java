@@ -73,7 +73,6 @@ import androidx.media3.common.MediaItem;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.otaliastudios.zoom.ZoomSurfaceView;
 
 import org.jetbrains.annotations.NotNull;

@@ -5,8 +5,6 @@ import android.content.Context;
 
 import androidx.annotation.Nullable;
 
-import android.content.Context;
-import androidx.annotation.OptIn;
 import androidx.media3.common.MediaItem;
 import androidx.media3.common.util.UnstableApi;
 import androidx.media3.database.DatabaseProvider;
@@ -26,21 +24,12 @@ import androidx.media3.exoplayer.RenderersFactory;
 import androidx.media3.exoplayer.offline.DownloadManager;
 import androidx.media3.exoplayer.offline.DownloadNotificationHelper;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.Executors;
 import org.chromium.net.CronetEngine;
-import com.a.acs2.CacheOnlyDataSource;
-
-import java.io.File;
-import java.net.CookieHandler;
-import java.net.CookieManager;
-import java.net.CookiePolicy;
-import java.util.concurrent.Executors;
 
 /** Utility methods for the demo app. */
 @UnstableApi
@@ -70,7 +59,7 @@ public final class DemoUtil {
     private static  File downloadDirectory;
     private static Cache downloadCache;
     private static DownloadManager downloadManager;
-    private static  DownloadTracker downloadTracker;
+
     private static DownloadNotificationHelper downloadNotificationHelper;
 
     private static MediaItem lastDownloadedMediaItem; // Add this variable
@@ -123,18 +112,7 @@ public final class DemoUtil {
         return dataSourceFactory;
     }
 
-    public static synchronized DataSource.Factory getOnlyCacheDataSourceFactory(Context context) {
-        if (dataSourceFactory == null) {
-            context = context.getApplicationContext();
 
-            // Ensure the download cache is initialized
-            Cache downloadCache = getDownloadCache(context);
-
-            // Create a CacheOnlyDataSource.Factory
-            dataSourceFactory = new CacheOnlyDataSource(downloadCache);
-        }
-        return dataSourceFactory;
-    }
 
 
 
@@ -198,10 +176,7 @@ public final class DemoUtil {
         return downloadManager;
     }
 
-    public static synchronized DownloadTracker getDownloadTracker(Context context) {
-        ensureDownloadManagerInitialized(context);
-        return downloadTracker;
-    }
+
 
     private static synchronized Cache getDownloadCache(Context context) {
         if (downloadCache == null) {

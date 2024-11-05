@@ -76,7 +76,7 @@ import androidx.media3.common.MediaItem;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.airbnb.lottie.LottieAnimationView;
+
 import com.otaliastudios.zoom.ZoomSurfaceView;
 
 import org.jetbrains.annotations.NotNull;
@@ -97,7 +97,7 @@ public class Offline_vid2 extends AppCompatActivity implements SelectListenermin
     private ZoomSurfaceView surfaceView;
     private PlayerControlView playerControlView;
     private ProgressBar progressBar;
-    private LottieAnimationView loading;
+
     private GestureDetector gestureDetector;
     private SimpleCache cache;
 
@@ -143,7 +143,7 @@ public class Offline_vid2 extends AppCompatActivity implements SelectListenermin
 //        items.add(new playlist_mini("ids", "ids", R.drawable.math, ContextCompat.getColor(this, color.title_bg)));
 
 
-        loading = findViewById(R.id.loading);
+
 
         View touch_r = findViewById(R.id.touch_r);
 

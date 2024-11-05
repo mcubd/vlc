@@ -44,18 +44,14 @@
         <activity
             android:name=".zz"
             android:exported="false" />
-        <activity
-            android:name=".xor"
-            android:exported="false" />
+
         <activity
             android:name=".lec"
             android:exported="false" />
         <activity
             android:name=".chapter"
             android:exported="false" />
-        <activity
-            android:name=".math"
-            android:exported="false" />
+
         <activity
             android:name=".subject"
             android:exported="false" />
@@ -67,15 +63,7 @@
             android:name=".offline_vid"
             android:configChanges="orientation|screenSize|layoutDirection"
             android:exported="false" />
-        <activity
-            android:name=".MyAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".MyViewHolder"
-            android:exported="false" />
-        <activity
-            android:name=".Item"
-            android:exported="false" />
+
         <activity
             android:name=".allow_access"
             android:configChanges="orientation|screenSize|layoutDirection"

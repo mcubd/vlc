@@ -88,8 +88,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -541,20 +540,13 @@ public class allow_access extends AppCompatActivity  implements SelectListener  
         else if (item.getName()=="Lec 1"){
             ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
 
-            Glide.with(allow_access.this)
-                    .load("https://bitdash-a.akamaihd.net/content/MI201109210084_1/thumbnails/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.jpg")
-//                    .apply(new RequestOptions().transform(new GlideThumbnailTransformation(100)))
-//                    .transform(new GlideThumbnailTransformation(1600))
-                    .into(imageView);
+
 
         }
         else if (item.getName()=="xogr"){
 
 
-            String value = item.getEmail();
-            Intent intent = new Intent(getApplicationContext(), xor.class);
 
-            startActivity(intent);
 
         }
         else if (item.getName()=="z"){
