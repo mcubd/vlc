@@ -62,7 +62,13 @@ public class OfflineVideoDownloadService extends DownloadService {
 
     @Override
     protected Scheduler getScheduler() {
-        return Util.SDK_INT >= 21 ? new PlatformScheduler(this, JOB_ID) : null;
+
+        try {
+            return Util.SDK_INT >= 21 ? new PlatformScheduler(this, JOB_ID) : null;
+        } catch (IllegalArgumentException e) {
+            Log.e("DownloadService", "Scheduler not available: " + e.getMessage());
+            return null; // Return null to avoid crashes if the scheduler can't be created.
+        }
     }
 
     @Override
@@ -81,6 +87,18 @@ public class OfflineVideoDownloadService extends DownloadService {
                 );
     }
 
+
+
+
+
+
+//    public void onIdle() {
+//        if (!isNetworkConnected()) {
+//            Log.w("DownloadService", "No network available; download paused.");
+//            return; // Avoid scheduling if there is no network
+//        }
+//        super.onIdle(); // Call the original onIdle method
+//    }
 
     /**
      * Creates and displays notifications for downloads when they complete or fail.
@@ -152,9 +170,17 @@ public class OfflineVideoDownloadService extends DownloadService {
                 DemoUtil.setLastDownloadedMediaItem(s);
                 return;
             }
-            Log.d("TAG", "downloading bro--: "  );
-
             NotificationUtil.setNotification(context, nextNotificationId++, notification);
         }
+
+//        @Override
+//        public void onIdle(DownloadManager downloadManager) {
+//            try {
+//                 Log.e("DownloadService", "onIdle done ");
+//            } catch (IllegalArgumentException e) {
+//                Log.e("DownloadService", "Idle err " + e.getMessage());
+//                 // Return null to avoid crashes if the scheduler can't be created.
+//            }
+//        };
     }
 }
