@@ -144,6 +144,7 @@ public class video extends AppCompatActivity implements SelectListenermini {
         super.onCreate(savedInstanceState);
 
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         getWindow().setStatusBarColor(getResources().getColor(color.title_bg));
 
 
