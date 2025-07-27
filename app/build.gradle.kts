@@ -15,6 +15,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -72,9 +73,9 @@ dependencies {
     // Media3 extension that contains a TimeBar.
     implementation ("com.github.rubensousa:previewseekbar-media3:1.1.1.0")
     implementation ("androidx.fragment:fragment:1.8.2")
+  implementation ("androidx.documentfile:documentfile:1.0.0")
 
-
-
+  implementation ("org.videolan.android:libvlc-all:3.4.0")
 
 
 

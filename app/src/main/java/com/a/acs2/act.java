@@ -36,7 +36,11 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Log;
 public class act extends AppCompatActivity {
 
     private JSONObject responseObject;
@@ -104,22 +108,7 @@ public class act extends AppCompatActivity {
 
             if (item.getItemId() == R.id.subs && !currentFragment.getClass().getSimpleName().equals("subs")   ) {
 
-//                if(currentFragment.getClass().getSimpleName().equals("frag") || currentFragment.getClass().getSimpleName().equals("lecs") ){
-//                     getSupportFragmentManager().popBackStack("FRAGMENT_11j", 0);
-//                }else{
-//
-//
-//                subs subs = new subs();
-//                Bundle bundle = new Bundle();
-//                bundle.putStringArray("keysArray", keysArray);
-//                subs.setArguments(bundle);
-//
-//                getSupportFragmentManager().beginTransaction()
-//                        .setReorderingAllowed(true)
-//                        .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
-//                        .replace(R.id.fragment_container, subs)
-//                        .addToBackStack("FRAGMENT_11")
-//                        .commit(); }
+
                 if(currentFragment.getClass().getSimpleName().equals("Dmanager") && getSupportFragmentManager().getBackStackEntryCount()==1){
                           Toast.makeText(getApplicationContext(), "Restartingggggg", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext() ,act.class);
@@ -156,19 +145,6 @@ public class act extends AppCompatActivity {
 
 
 
-//                  if (item.getItemId() == R.id.dmanager ) {
-//                Dmanager Dmanager = new Dmanager();
-//                getSupportFragmentManager().beginTransaction()
-//                        .setReorderingAllowed(true)
-////                        .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right)
-//                        .setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left)
-//                        .replace(R.id.fragment_container, Dmanager)
-//                        .addToBackStack("FRAGMENT_11dg")
-//                        .commit();
-//                return true;
-
-
-//            }
 
 
 

@@ -20,7 +20,7 @@ public class ss_act extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ss_act.this, act.class));
+                startActivity(new Intent(ss_act.this, homee.class));
                 finish();
             }
         },30);
